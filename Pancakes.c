@@ -20,7 +20,7 @@ void flip (int i, int pancakes[])
     }
 }
 
-int pancakes (int totalPan, int randNumb[])
+int populatePancakes (int totalPan, int randNumb[])
 {
   //Random Generator
   srand(time(NULL));
@@ -33,11 +33,11 @@ int pancakes (int totalPan, int randNumb[])
 
 int main (int argc, char *argv[])
 {
-  //Gets The Random Pancake Sizes
-  int totalPan;
-  scanf("%d", &totalPan);
-  int randNumb[totalPan];
-  randNumb = pancakes(totalPan, randNumb);
-  
-  return 0;
+    //Gets The Random Pancake Sizes
+    int totalPan;
+    scanf("%d", &totalPan);
+    int randNumb[totalPan];
+    randNumb = populatePancakes(totalPan, randNumb);
+
+    return 0;
 }
